@@ -14,7 +14,7 @@ module Sinatra
     end
 
     def self.registered app
-      Dir["#{config_directory}/**/*.rb"].each do |file_path|
+      Dir["#{app.config_directory}/**/*.rb"].each do |file_path|
         require File.join(Dir.pwd, file_path)
       end
     end
