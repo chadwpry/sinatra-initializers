@@ -1,0 +1,84 @@
+= Sinatra::Initializers
+
+A Sinatra Extension that sets up rails like initializers
+
+== Installation
+
+  $  gem install sinatra-initializers
+
+== Dependencies
+
+This Gem depends upon the following:
+
+=== Runtime:
+
+* sinatra ( >= 1.0 )
+
+
+=== Development & Tests:
+
+* Not yet setup
+
+== Getting Started
+
+To view the settings in your app, just require and register the extension 
+in your sub-classed Sinatra app:
+  
+  require 'sinatra/initializers'
+  
+  class YourApp < Sinatra::Base
+    
+    register Sinatra::Initializers
+    
+  end
+
+
+In your "classic" Sinatra app, you just require the extension like this:
+
+  require 'rubygems'
+  require 'sinatra'
+  require 'sinatra/initializers'
+  
+
+== Configuration Options
+
+The configuration directory may be defined by setting
+the "config_directory" app variable.  Unless it is setup
+it will default to "config/initializers"
+
+Add initializer scripts in config/initializers.  Naming
+follows a strict pattern of number then name for order priority
+
+  00-first_initializer.rb
+  01-second_initializer.rb
+
+
+== More detail needed?
+
+Contact me via email!
+
+
+== Errors / Bugs
+
+If something is not behaving intuitively, it is a bug, and should be reported.
+Report it here: http://github.com/chadwpry/sinatra-multi-stage/issues 
+
+
+== TODOs
+
+* TBD
+
+
+== Note on Patches/Pull Requests
+ 
+* Fork the project.
+* Make your feature addition or bug fix.
+* Commit, do not mess with rakefile, version, or history.
+  * (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
+* Send me a pull request. Bonus points for topic branches.
+
+== Copyright
+
+Copyright (c) 2011 Chad W Pry. Released under the MIT License.
+
+See LICENSE for details.
