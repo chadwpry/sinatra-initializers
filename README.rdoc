@@ -17,7 +17,8 @@ This Gem depends upon the following:
 
 === Development & Tests:
 
-* Not yet setup
+* bundle install
+* Execute rake or rspec
 
 == Getting Started
 
@@ -61,7 +62,7 @@ Contact me via email!
 == Errors / Bugs
 
 If something is not behaving intuitively, it is a bug, and should be reported.
-Report it here: http://github.com/chadwpry/sinatra-multi-stage/issues 
+Report it here: http://github.com/chadwpry/sinatra-initializers/issues 
 
 
 == TODOs

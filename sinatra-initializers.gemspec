@@ -25,15 +25,22 @@ Gem::Specification.new do |s|
      "VERSION",
      "lib/sinatra/initializers.rb",
      "sinatra-initializers.gemspec",
+     "Gemfile",
+     "Rakefile"
 #     "spec/sinatra/settings_spec.rb",
 #     "spec/spec.opts",
 #     "spec/spec_helper.rb"
   ]
+  s.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.homepage = %q{http://github.com/chadwpry/sinatra-initializers}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{A Sinatra Extension that follows a pattern of rails initializers}
+  
+  s.add_development_dependency('sinatra')
+  s.add_development_dependency('rake')
+  s.add_development_dependency('rspec')
 #  s.test_files = [
 #    "spec/sinatra/settings_spec.rb",
 #     "spec/spec_helper.rb"
