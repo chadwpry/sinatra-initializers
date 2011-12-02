@@ -22,6 +22,5 @@ doc
 ## PROJECT::SPECIFIC
 spec/fixtures/
 
-# Heroku requests it
-#Gemfile.lock
-#
+# Gemfile.lock should stay out of the .gitignore
+# http://gembundler.com/#getting-started
