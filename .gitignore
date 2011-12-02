@@ -21,3 +21,5 @@ doc
 
 ## PROJECT::SPECIFIC
 spec/fixtures/
+
+Gemfile.lock
