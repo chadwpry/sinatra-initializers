@@ -22,4 +22,6 @@ doc
 ## PROJECT::SPECIFIC
 spec/fixtures/
 
-Gemfile.lock
+# Heroku requests it
+#Gemfile.lock
+#

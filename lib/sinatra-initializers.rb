@@ -1,16 +1,15 @@
-require 'yaml'
 require 'sinatra/base'
+require 'sinatra-initializers/version'
 
 module Sinatra
   class Base
-    set(:config_directory, "config/initializers") unless respond_to?(:config_directory)
+    set(:config_directory, "config/initializers")
   end
 
   module Initializers
-    VERSION = '0.1.0' unless const_defined?(:VERSION)
-
-    def self.version
-      "Sinatra::Initializers v#{VERSION}"
+    def config_directory= path
+      super
+      register Sinatra::Initializers
     end
 
     def self.registered app

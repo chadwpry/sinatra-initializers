@@ -1,9 +1,10 @@
-require 'rspec'
-require 'sinatra/initializers'
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 
-# Requires supporting files with custom matchers and macros, etc,
-# in ./support/ and its subdirectories.
+require 'rspec'
+require 'sinatra-initializers'
+
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
 
 RSpec.configure do |config|  
 end
+
