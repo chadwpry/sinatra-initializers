@@ -23,7 +23,8 @@ Gem::Specification.new do |s|
      "LICENSE",
      "README.rdoc",
      "VERSION",
-     "lib/sinatra/initializers.rb",
+     "lib/sinatra-initializers.rb",
+     "lib/sinatra-initializers/version.rb",
      "sinatra-initializers.gemspec",
      "Gemfile",
      "Rakefile"

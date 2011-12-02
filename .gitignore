@@ -18,9 +18,7 @@ coverage
 rdoc
 pkg
 doc
+Gemfile.lock
 
 ## PROJECT::SPECIFIC
 spec/fixtures/
-
-# Gemfile.lock should stay out of the .gitignore
-# http://gembundler.com/#getting-started
