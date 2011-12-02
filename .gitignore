@@ -19,6 +19,7 @@ rdoc
 pkg
 doc
 Gemfile.lock
+*.gem
 
 ## PROJECT::SPECIFIC
 spec/fixtures/
