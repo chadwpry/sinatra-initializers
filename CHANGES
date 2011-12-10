@@ -13,3 +13,7 @@ rel 0.1.1 (2011-12-02)
 * move test initializer to spec/config/initializer
 * re-register when config_directory is changed
 
+rel 0.1.3
+
+* update the README to require sinatra-initializers
+
