@@ -17,3 +17,7 @@ rel 0.1.3
 
 * update the README to require sinatra-initializers
 
+rel 0.1.4
+
+* update version to fix spec version test (doh!)
+
